@@ -3,3 +3,4 @@
 pub fn hello_world() -> &'static str {
     "hello me"
 }
+pub mod math;
