@@ -6,7 +6,8 @@
  *
  */
 
-use fluid_simulator::{F32x2, Vector, VectorExt};
+use fluid_simulator::math::VectorExt;
+use fluid_simulator::micromath::vector::{F32x2, Vector};
 use nannou::prelude::*;
 use std::{
     f32,
