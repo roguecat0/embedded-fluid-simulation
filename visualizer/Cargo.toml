@@ -1,7 +1,8 @@
 [package]
 name = "visualizer"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+default-run = "visualizer"
 
 [dependencies]
 fluid_simulator = {path="../fluid_simulator/"}

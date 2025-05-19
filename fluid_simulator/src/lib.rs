@@ -11,7 +11,7 @@ pub use micromath;
 
 // 64 * 3 = 192 bit
 // not doing wind ...
-const PARTICLES: usize = 40;
+pub const PARTICLES: usize = 2;
 const GRAVITY: F32x2 = F32x2 { x: 0.0, y: -9.81 };
 const MASS: f32 = 0.1;
 
@@ -34,7 +34,6 @@ pub struct ParticleSystemSolver2d {
     new_velocities: [F32x2; PARTICLES],
     box_borders: BoxBorders,
 }
-pub struct NeigborSearcher {}
 impl ParticleSystemSolver2d {
     pub fn advance_timestep(&mut self, delta: f32) {
         self.begin_timestep();
